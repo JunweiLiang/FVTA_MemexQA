@@ -2,7 +2,7 @@
 This is an end-to-end implementation of the FVTA model described in the paper
 
 ## Dependencies
-+ Python 2.7; TensorFlow >= 1.4.0; tqdm and stuff
++ Python 2.7; TensorFlow >= 1.4.0; tqdm and nltk (for preprocessing)
 + Preprocessed [MemexQA data](https://memexqa.cs.cmu.edu/fvta_model_zoo/prepro_v1.1.tgz), which you can process yourself with the [MemexQA dataset v1.1](https://memexqa.cs.cmu.edu/memexqa_dataset_v1.1/). 
 + Pre-trained [models](https://memexqa.cs.cmu.edu/fvta_model_zoo/) from the fvta model zoo. Each extracted model file looks like this:
 ```
