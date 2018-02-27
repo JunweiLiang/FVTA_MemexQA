@@ -57,7 +57,9 @@ Results as in the paper:
 
 Test accuracy: 0.479513987002
 
+```
 	$ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidden_size 512 --dmnplus --image_feat_dim 2537 --is_test --load_best
+```
 
 
 2. MCB
