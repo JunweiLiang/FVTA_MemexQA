@@ -56,45 +56,48 @@ Results as in the paper:
 1. DMN+ 
 
 Test accuracy: 0.479513987002
-
 ```
-	$ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidden_size 512 --dmnplus --image_feat_dim 2537 --is_test --load_best
+$ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidden_size 512 --dmnplus --image_feat_dim 2537 --is_test --load_best
 ```
 
 
 2. MCB
 
 Test accuracy: 0.462277479514
-
-	$ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_size 200 --image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb --mcb_outdim 1024  --is_test  --load_best
+```
+$ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_size 200 --image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb --mcb_outdim 1024  --is_test  --load_best
+```
 
 
 3. Soft Attention 
 
 Test accuracy: 0.620796835264
-
-	$ python main.py prepro_v1.1/ models --modelname soft_att --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only --use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 --load_best
-
+```
+$ python main.py prepro_v1.1/ models --modelname soft_att --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only --use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 --load_best
+```
 
 4. Soft Attention Bi-directional (BiDAF)
 
 Test accuracy: 0.597909013846
-
-	$ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only --use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att --simiMatrix 2 --use_bidirect
+```
+$ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only --use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att --simiMatrix 2 --use_bidirect
+```
 
 
 5. TGIF Attention
 
 Test accuracy: 0.629556371856
-
-	$ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_tgif_ml_att --is_test --load_best
+```
+$ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_tgif_ml_att --is_test --load_best
+```
 
 
 6. FVTA
 
 Test accuracy: 0.668550437977
-
-	$ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+```
+$ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+```
 
 
 
