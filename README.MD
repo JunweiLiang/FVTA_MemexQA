@@ -23,7 +23,7 @@ This is an end-to-end implementation of the FVTA model described in the paper
 The main entrance for the code base is `main.py`. It has two modes: training and testing. It will first load the desired model class from `model.py/model_v2.py/model_mcb.py/model_dmnplus.py` to contruct the model graph and will attempt to load weights if provided `--load/--load_best`.
 
 ## Testing
-The testing code assumes the following directory structure. Download the corresponding model file from the [model zoo]() and extract in the `models` directory
+The testing code assumes the following directory structure. Download the corresponding model file from the [model zoo](https://memexqa.cs.cmu.edu/fvta_model_zoo/) and extract in the `models` directory. Extract the [preprocessed data](https://memexqa.cs.cmu.edu/fvta_model_zoo/prepro_v1.1.tgz) into the current directory. 
 ```
 DIR/
   *.py
