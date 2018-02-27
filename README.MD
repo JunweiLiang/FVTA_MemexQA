@@ -104,34 +104,35 @@ $ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_f
 7. Abalation Experiments
 
 - FVTA_no_question attention. Test accuracy: 0.628708674767
-
-	$ python main.py prepro_v1.1 models/ --modelname fvta_no_qatt --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
-
+```
+$ python main.py prepro_v1.1 models/ --modelname fvta_no_qatt --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+```
 
 - FVTA_no_photo. Test accuracy: 0.577281717999
-
-	$ python main.py prepro_v1.1 models/ --modelname fvta_no_photo --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1 --no_photo
-
+```
+$ python main.py prepro_v1.1 models/ --modelname fvta_no_photo --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1 --no_photo
+```
 
 - FVTA_no_timewarp. Test accuracy: 0.613167561458
-
-	$ python main.py prepro_v1.1 models/ --modelname fvta_notimewarp --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --is_test --load_best --batch_size 32
+```
+$ python main.py prepro_v1.1 models/ --modelname fvta_notimewarp --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 2 --use_question_att --use_3d --is_test --load_best --batch_size 32
+```
 
 
 - FVTA_no_intraseq. Test accuracy: 0.5690873128
-
-	$ python main.py prepro_v1.1/ models/ --modelname fvta_no_intraseq --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --use_mm_att --simiMatrix 2 --use_question_att --is_test --load_best
-
+```
+$ python main.py prepro_v1.1/ models/ --modelname fvta_no_intraseq --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --use_mm_att --simiMatrix 2 --use_question_att --is_test --load_best
+```
 
 - FVTA_no_crossseq. Test accuracy: 0.604125459169
-
-	$ python main.py prepro_v1.1/ models/ --modelname fvta_no_crossseq --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --use_ml_att --simiMatrix 2 --use_question_att --is_test --load_best
-
+```
+$ python main.py prepro_v1.1/ models/ --modelname fvta_no_crossseq --batch_size 64 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --use_ml_att --simiMatrix 2 --use_question_att --is_test --load_best
+```
 
 - FVTA cosine. Test accuracy: 0.619666572478
-
-	$ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
-
+```
+$ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+```
 
 ## Evaluation
 
