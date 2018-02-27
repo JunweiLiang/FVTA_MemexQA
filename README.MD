@@ -22,13 +22,13 @@ This is an end-to-end implementation of the FVTA model described in the paper
 The testing code assumes the following directory structure. Download the corresponding model file from the [model zoo]() and extract in the `models` directory
 ```
 DIR/
-	*.py
-	models/
-		model_name/
-			00/
-				..
-	prepro_v1.1/
-		..
+  *.py
+  models/
+    model_name/
+      00/
+        ..
+  prepro_v1.1/
+    ..
 ```
 
 1. DMN+ 
