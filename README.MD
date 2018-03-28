@@ -1,5 +1,11 @@
 # Focal Visual-Text Attention for Visual Question Answering
-This is an end-to-end implementation of the FVTA model described in the paper
+
+This repository contains the code and models for our CVPR 2018 paper:
+
+    Junwei Liang, Lu Jiang, Liangliang Cao, Li-Jia Li, Alexander Hauptmann
+    "Focal Visual-Text Attention for Visual Question Answering"
+    in Proc. CVPR 2018
+
 
 ## Dependencies
 + Python 2.7; TensorFlow >= 1.4.0; tqdm and nltk (for preprocessing)
