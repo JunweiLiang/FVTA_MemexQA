@@ -1,4 +1,4 @@
-# Answer with Grounding Snippets: Focal Visual-Text Attention for Visual Question Answering
+# Focal Visual-Text Attention for Visual Question Answering
 This is an end-to-end implementation of the FVTA model described in the paper
 
 ## Dependencies
