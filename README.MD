@@ -1,6 +1,6 @@
 # Focal Visual-Text Attention for Visual Question Answering
 
-This repository contains the code and models for our CVPR 2018 paper:
+This repository contains the code and models for our CVPR 2018 spotlight paper:
 
     Junwei Liang, Lu Jiang, Liangliang Cao, Li-Jia Li, Alexander Hauptmann
     "Focal Visual-Text Attention for Visual Question Answering"
