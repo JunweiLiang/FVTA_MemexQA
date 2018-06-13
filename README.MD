@@ -6,6 +6,14 @@ This repository contains the code and models for our CVPR 2018 spotlight paper:
     "Focal Visual-Text Attention for Visual Question Answering"
     in Proc. CVPR 2018
 
+If you find the code useful for your research, please cite our paper:
+
+        @inproceedings{liang2018focal,
+          title={Focal Visual-Text Attention for Visual Question Answering},
+          author={Liang, Junwei and Jiang, Lu and Cao, Liangliang and Li, Li-Jia and Hauptmann, Alexander},
+          booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)},
+          year={2018}
+        }
 
 ## Dependencies
 + Python 2.7; TensorFlow >= 1.4.0; tqdm and nltk (for preprocessing)
