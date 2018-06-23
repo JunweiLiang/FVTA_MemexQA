@@ -6,6 +6,11 @@ This repository contains the code and models for our CVPR 2018 spotlight paper:
     "Focal Visual-Text Attention for Visual Question Answering"
     in Proc. CVPR 2018
 
+<div align="center">
+  <img src="qualitative_memexqa.jpg" width="700px" />
+  <p>Example FVTA Output. </p>
+</div>
+
 If you find the code useful for your research, please cite our paper:
 
         @inproceedings{liang2018focal,
