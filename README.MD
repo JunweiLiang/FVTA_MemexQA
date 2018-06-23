@@ -37,6 +37,14 @@ If you find the code useful for your research, please cite our paper:
 │           └── answers.json
 ```
 
+## Model
+
+<div align="center">
+  <img src="memexqa_simp.png" width="700px" />
+  <p>Focal Visual-Text Attention Network. </p>
+</div>
+
+
 ## Code Structure
 
 The main entrance for the code base is `main.py`. It has two modes: training and testing. It will first load the desired model class from `model.py/model_v2.py/model_mcb.py/model_dmnplus.py` to contruct the model graph and will attempt to load weights if provided `--load/--load_best`.
