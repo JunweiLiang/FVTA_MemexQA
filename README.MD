@@ -7,7 +7,7 @@ This repository contains the code and models for our CVPR 2018 spotlight paper:
     in Proc. CVPR 2018
 
 <div align="center">
-  <img src="qualitative_memexqa.jpg" width="700px" />
+  <img src="qualitative_memexqa.png" width="700px" />
   <p>Example FVTA Output. </p>
 </div>
 
