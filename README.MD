@@ -88,7 +88,7 @@ Results as in the paper:
 
 Test accuracy: 0.479513987002
 ```
-$ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidden_size 512 \\ --dmnplus --image_feat_dim 2537 --is_test --load_best
+$ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidden_size 512 \ --dmnplus --image_feat_dim 2537 --is_test --load_best
 ```
 
 
@@ -96,7 +96,7 @@ $ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidd
 
 Test accuracy: 0.462277479514
 ```
-$ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_size 200 \\ --image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb --mcb_outdim 1024  --is_test  --load_best
+$ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_size 200 \ --image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb --mcb_outdim 1024  --is_test  --load_best
 ```
 
 
@@ -104,14 +104,14 @@ $ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_s
 
 Test accuracy: 0.620796835264
 ```
-$ python main.py prepro_v1.1/ models --modelname soft_att --batch_size 64 --hidden_size 50 \\ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \\--use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 --load_best
+$ python main.py prepro_v1.1/ models --modelname soft_att --batch_size 64 --hidden_size 50 \ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \ --use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 --load_best
 ```
 
 4. Soft Attention Bi-directional (BiDAF)
 
 Test accuracy: 0.597909013846
 ```
-$ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 64 \\ --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \\--use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att --simiMatrix 2 --use_bidirect
+$ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 64 \ --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \ --use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att --simiMatrix 2 --use_bidirect
 ```
 
 
@@ -119,7 +119,7 @@ $ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 
 
 Test accuracy: 0.629556371856
 ```
-$ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden_size 50 \\ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 \\ --add_tanh --simiMatrix 2 --use_tgif_ml_att --is_test --load_best
+$ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden_size 50 \ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 \ --add_tanh --simiMatrix 2 --use_tgif_ml_att --is_test --load_best
 ```
 
 
@@ -127,7 +127,7 @@ $ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden
 
 Test accuracy: 0.668550437977
 ```
-$ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_feat_dim 2537 \\ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\--simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+$ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
 ```
 
 
@@ -136,33 +136,33 @@ $ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_f
 
 - FVTA_no_question attention. Test accuracy: 0.628708674767
 ```
-$ python main.py prepro_v1.1 models/ --modelname fvta_no_qatt --hidden_size 50 --image_feat_dim 2537 \\ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\ --simiMatrix 2 --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+$ python main.py prepro_v1.1 models/ --modelname fvta_no_qatt --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 2 --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
 ```
 
 - FVTA_no_photo. Test accuracy: 0.577281717999
 ```
-$ python main.py prepro_v1.1 models/ --modelname fvta_no_photo --hidden_size 50 --image_feat_dim 2537 \\ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\--simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1 --no_photo
+$ python main.py prepro_v1.1 models/ --modelname fvta_no_photo --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1 --no_photo
 ```
 
 - FVTA_no_timewarp. Test accuracy: 0.613167561458
 ```
-$ python main.py prepro_v1.1 models/ --modelname fvta_notimewarp --hidden_size 50 --image_feat_dim 2537 \\--use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\--simiMatrix 2 --use_question_att --use_3d --is_test --load_best --batch_size 32
+$ python main.py prepro_v1.1 models/ --modelname fvta_notimewarp --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 2 --use_question_att --use_3d --is_test --load_best --batch_size 32
 ```
 
 
 - FVTA_no_intraseq. Test accuracy: 0.5690873128
 ```
-$ python main.py prepro_v1.1/ models/ --modelname fvta_no_intraseq --batch_size 64 --hidden_size 50 \\ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 \\ --char_out_size 100 --use_mm_att --simiMatrix 2 --use_question_att --is_test --load_best
+$ python main.py prepro_v1.1/ models/ --modelname fvta_no_intraseq --batch_size 64 --hidden_size 50 \ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 \ --char_out_size 100 --use_mm_att --simiMatrix 2 --use_question_att --is_test --load_best
 ```
 
 - FVTA_no_crossseq. Test accuracy: 0.604125459169
 ```
-$ python main.py prepro_v1.1/ models/ --modelname fvta_no_crossseq --batch_size 64 --hidden_size 50 \\ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size \\ 100 --use_ml_att --simiMatrix 2 --use_question_att --is_test --load_best
+$ python main.py prepro_v1.1/ models/ --modelname fvta_no_crossseq --batch_size 64 --hidden_size 50 \ --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size \ 100 --use_ml_att --simiMatrix 2 --use_question_att --is_test --load_best
 ```
 
 - FVTA cosine. Test accuracy: 0.619666572478
 ```
-$ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --image_feat_dim 2537 \\ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\ --simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+$ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
 ```
 
 ## Evaluation
@@ -170,7 +170,7 @@ $ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --
 After running the testing code, it will output the accuracy on test set, and save the answers in `model_name/00/test_best/answers.json`. You can use the following code to get more detailed evaluation. Need the [MemexQA v1.1 dataset](https://memexqa.cs.cmu.edu/memexqa_dataset_v1.1/)
 
 ```
-$ python evaluate-v0.1.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/test_question.ids \\ models/fvta/00/test_best/answers.json --bucket memexqa_dataset_v1.1/qatype.bucket.json
+$ python evaluate-v0.1.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/test_question.ids \ models/fvta/00/test_best/answers.json --bucket memexqa_dataset_v1.1/qatype.bucket.json
 got 3539 ground truth qa
 Overall acc: 0.668550437977 (2366/3539)
         group how: 0.761336515513 (319/419)
@@ -187,12 +187,12 @@ how what when where who overall
 
 Train the FVTA model:
 
-	$ python main.py prepro_v1.1 models/ --modelname fvta_newtrain --hidden_size 50 --image_feat_dim 2537 \\ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \\ --simiMatrix 2 --use_question_att --use_3d --num_albums_thres 4 --num_photos_thres 8 --sent_des_size_thres \\ 10 --sent_album_title_size_thres 8 --sent_photo_title_size_thres 8 --use_time_warp --warp_type 5 \\ --is_train --batch_size 6 --val_num_batches 2000 --save_period 1000 --num_epochs 200 --init_lr 0.5
+	$ python main.py prepro_v1.1 models/ --modelname fvta_newtrain --hidden_size 50 --image_feat_dim 2537 \ --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \ --simiMatrix 2 --use_question_att --use_3d --num_albums_thres 4 --num_photos_thres 8 --sent_des_size_thres \ 10 --sent_album_title_size_thres 8 --sent_photo_title_size_thres 8 --use_time_warp --warp_type 5 \ --is_train --batch_size 6 --val_num_batches 2000 --save_period 1000 --num_epochs 200 --init_lr 0.5
 
 
 This will take about 50 hours with a TITAN X GPU using about 9GB GPU memory. All other models are also train with the following hyperparameters, with different batch_size depending on whether it could fit in the GPU:
 ```
---batch_size 6 --val_num_batches 2000 --save_period 1000 --num_epochs 200 --init_lr 0.5 --num_albums_thres 4 \\ --num_photos_thres 8 --sent_des_size_thres 10 --sent_album_title_size_thres 8 \\ --sent_photo_title_size_thres 8
+--batch_size 6 --val_num_batches 2000 --save_period 1000 --num_epochs 200 --init_lr 0.5 --num_albums_thres 4 \ --num_photos_thres 8 --sent_des_size_thres 10 --sent_album_title_size_thres 8 \ --sent_photo_title_size_thres 8
 ```
 
 ## Preprocess data
@@ -201,5 +201,5 @@ This will take about 50 hours with a TITAN X GPU using about 9GB GPU memory. All
 
 2. Run the code at the same directory
 ```
-	$ python preprocess.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/album_info.json \\ memexqa_dataset_v1.1/test_question.ids memexqa_dataset_v1.1/photos_inception_resnet_v2_l2norm.npz \\ memexqa_dataset_v1.1/glove.6B.100d.txt prepro_v1.1
+	$ python preprocess.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/album_info.json \ memexqa_dataset_v1.1/test_question.ids memexqa_dataset_v1.1/photos_inception_resnet_v2_l2norm.npz \ memexqa_dataset_v1.1/glove.6B.100d.txt prepro_v1.1
 ```
