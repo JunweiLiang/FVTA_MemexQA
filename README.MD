@@ -217,7 +217,7 @@ how what when where who overall
 
 Train the FVTA model:
 ```
-	$ python main.py prepro_v1.1 models/ --modelname fvta_newtrain --hidden_size 50 --image_feat_dim 2537 \
+$ python main.py prepro_v1.1 models/ --modelname fvta_newtrain --hidden_size 50 --image_feat_dim 2537 \
 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \
 --simiMatrix 2 --use_question_att --use_3d --num_albums_thres 4 --num_photos_thres 8 --sent_des_size_thres \
 10 --sent_album_title_size_thres 8 --sent_photo_title_size_thres 8 --use_time_warp --warp_type 5 \
@@ -237,7 +237,7 @@ This will take about 50 hours with a TITAN X GPU using about 9GB GPU memory. All
 
 2. Run the code at the same directory
 ```
-	$ python preprocess.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/album_info.json \
+$ python preprocess.py memexqa_dataset_v1.1/qas.json memexqa_dataset_v1.1/album_info.json \
 memexqa_dataset_v1.1/test_question.ids memexqa_dataset_v1.1/photos_inception_resnet_v2_l2norm.npz \
 memexqa_dataset_v1.1/glove.6B.100d.txt prepro_v1.1
 ```
