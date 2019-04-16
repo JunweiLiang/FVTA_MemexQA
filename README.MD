@@ -98,7 +98,8 @@ $ python main.py prepro_v1.1/ models/ --modelname dmnplus --batch_size 64 --hidd
 Test accuracy: 0.462277479514
 ```
 $ python main.py prepro_v1.1/ models/ --modelname mcb --batch_size 64 --hidden_size 200 \
---image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb --mcb_outdim 1024  --is_test  --load_best
+--image_feat_dim 2537 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh --mcb \
+--mcb_outdim 1024  --is_test  --load_best
 ```
 
 
@@ -108,7 +109,8 @@ Test accuracy: 0.620796835264
 ```
 $ python main.py prepro_v1.1/ models --modelname soft_att --batch_size 64 --hidden_size 50 \
 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \
---use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 --load_best
+--use_char --char_emb_size 100 --char_out_size 100 --is_test --use_question_att --simiMatrix 2 \
+--load_best
 ```
 
 4. Soft Attention Bi-directional (BiDAF)
@@ -117,7 +119,8 @@ Test accuracy: 0.597909013846
 ```
 $ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 64 \
 --hidden_size 50 --image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_direct_links --direct_links_only \
---use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att --simiMatrix 2 --use_bidirect
+--use_char --char_emb_size 100 --char_out_size 100 --is_test --load_best --use_question_att \
+--simiMatrix 2 --use_bidirect
 ```
 
 
@@ -126,7 +129,8 @@ $ python main.py prepro_v1.1/ models --modelname soft_att_bidirect --batch_size 
 Test accuracy: 0.629556371856
 ```
 $ python main.py prepro_v1.1/ models/ --modelname tgif  --batch_size 64 --hidden_size 50 \
---image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 \
+--image_feat_dim 2537 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 \
+--char_out_size 100 \
 --add_tanh --simiMatrix 2 --use_tgif_ml_att --is_test --load_best
 ```
 
@@ -137,7 +141,8 @@ Test accuracy: 0.668550437977
 ```
 $ python main.py prepro_v1.1 models/ --modelname fvta --hidden_size 50 --image_feat_dim 2537 \
 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \
---simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+--simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best \
+--batch_size 1
 ```
 
 
@@ -155,7 +160,8 @@ $ python main.py prepro_v1.1 models/ --modelname fvta_no_qatt --hidden_size 50 -
 ```
 $ python main.py prepro_v1.1 models/ --modelname fvta_no_photo --hidden_size 50 --image_feat_dim 2537 \
 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \
---simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1 --no_photo
+--simiMatrix 2 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best \
+--batch_size 1 --no_photo
 ```
 
 - FVTA_no_timewarp. Test accuracy: 0.613167561458
@@ -184,7 +190,8 @@ $ python main.py prepro_v1.1/ models/ --modelname fvta_no_crossseq --batch_size 
 ```
 $ python main.py prepro_v1.1 models/ --modelname fvta_cosine --hidden_size 50 --image_feat_dim 2537 \
 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \
---simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best --batch_size 1
+--simiMatrix 4 --use_question_att --use_3d --use_time_warp --warp_type 5 --is_test --load_best \
+--batch_size 1
 ```
 
 ## Evaluation
@@ -209,13 +216,13 @@ how what when where who overall
 ## Training
 
 Train the FVTA model:
-
+```
 	$ python main.py prepro_v1.1 models/ --modelname fvta_newtrain --hidden_size 50 --image_feat_dim 2537 \
 --use_image_trans --image_trans_dim 100 --use_char --char_emb_size 100 --char_out_size 100 --add_tanh \
 --simiMatrix 2 --use_question_att --use_3d --num_albums_thres 4 --num_photos_thres 8 --sent_des_size_thres \
 10 --sent_album_title_size_thres 8 --sent_photo_title_size_thres 8 --use_time_warp --warp_type 5 \
 --is_train --batch_size 6 --val_num_batches 2000 --save_period 1000 --num_epochs 200 --init_lr 0.5
-
+```
 
 This will take about 50 hours with a TITAN X GPU using about 9GB GPU memory. All other models are also train with the following hyperparameters, with different batch_size depending on whether it could fit in the GPU:
 ```
