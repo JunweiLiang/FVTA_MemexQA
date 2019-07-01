@@ -1,6 +1,6 @@
 # Focal Visual-Text Attention for Visual Question Answering
 
-**Check out our MemexQA dataset [here](https://memexqa.cs.cmu.edu/). It is published on IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).***
+**Check out our MemexQA dataset [here](https://memexqa.cs.cmu.edu/). It is published on IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI).**
 
 This repository contains the code and models for our CVPR 2018 spotlight paper:
 
